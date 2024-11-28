@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: #323232;
+}
+.header_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+}
+.titulo{
+    color: beige;
+}
+
+.main_section {
+    background-color: beige;
+}
+.main_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 130px;
+    margin: auto;
+}
+
+/* Formulario */
+.formulario{
+    display: flex;
+    flex-direction: column;
+    background-color: #232323;
+    padding: 30px;
+    border-radius: 25px;
+    width: 1250px;
+}
+
+/* Parte de labels y inputs*/
+.form_up {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.form_label, .input_text, .comprobar{
+    margin:7px ;
+}
+.input_text, .comprobar{
+    font-size: 15px;
+}
+
+/* Solo labels */
+.form_up_left{
+    display: flex;
+    flex-direction: column;
+}
+.form_label {
+    color: beige;
+    font-size: 18px;
+}
+
+/* Inputs y botones*/
+.form_up_right {
+    display: flex;
+    justify-content: center;
+}
+.form_up_right_inputs {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.form_up_right_buttons {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.input_text{
+    border-color: beige;
+    border-width: 3px;
+    border-radius: 7px;
+}
+.comprobar{
+    border-radius: 7px;
+    padding: 1px;
+}
+
+/* Botones de enviar y reset */
+.form_down {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30px;
+}
+.button_form, .reset_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+    border-color: beige;
+}
+.button_form:hover{
+    background-color: darkseagreen;
+}
+.reset_button:hover{
+    background-color: darksalmon;
+}
+
+/* Footer */
+.footer{
+    background-color: #323232;
+}
+.footer_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}

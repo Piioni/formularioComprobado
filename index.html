@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Comprobación de formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page_wrapper">
+    <div class="header">
+        <div class="header_wrapper">
+            <div>
+                <h1 class="titulo"> Esta es mi comprobación de un formulario! </h1>
+            </div>
+        </div>
+    </div>
+    <div class="main_section">
+        <div class="main_wrapper">
+            <div class="form">
+                <form name="form" class="formulario" action="./sent_form.html" method="post">
+                    <div class="form_up">
+                        <div class="form_up_left">
+                            <label class="form_label" for="email"> Introduce un Email (p.ej.: Pepe@foc.es): </label>
+                            <label class="form_label" for="passwd"> Introduce una passwd, (5 Caracteres, al menos 1 May,
+                                1 Min, 1 N.º): </label>
+                            <label class="form_label" for="username"> Introduce un Nombre de usuario (3 o más
+                                caracteres): </label>
+                            <label class="form_label" for="nombre_apellidos">Nombre y Apellidos </label>
+                        </div>
+                        <div class="form_up_right">
+                            <div class="form_up_right_inputs">
+                                <input class="input_text" required type="email" name="email" id="email" size="50"
+                                       placeholder="pepe@foc.com">
+                                <input class="input_text" required type="password" name="passwd" id="passwd" size="30">
+                                <input class="input_text" required type="text" name="username" id="username"
+                                       placeholder="xX_Pepe_Xx" size="30">
+                                <input class="input_text" required type="text" name="nombre_apellidos"
+                                       id="nombre_apellidos" placeholder="Pepe Rodriguez">
+                            </div>
+                            <div class="form_up_right_buttons">
+                                <button type="button" class="comprobar" onclick="validarEmail(this.form)"> Validar
+                                    Email
+                                </button>
+                                <br>
+                                <button type="button" class="comprobar" onclick="validarPasswd(this.form)"> Validar
+                                    Password
+                                </button>
+                                <br>
+                                <button type="button" class="comprobar" onclick="validarUsername(this.form)"> Validar
+                                    Username
+                                </button>
+                                <br>
+                                <button type="button" class="comprobar" onclick="validarNombre(this.form)"> Validar
+                                    Nombre
+                                </button>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_down">
+                        <input onclick="enviarForm(this.form, this.button)" name="enviar" type="submit"
+                               class="button_form" value="Comprobar y Enviar formulario">
+                        <input type="reset" class="reset_button" value="Limpiar los campos">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_wrapper">
+            <div>
+                <h1 class="titulo"> Rangel Juan © Z0079225H  </h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+
+</html>
