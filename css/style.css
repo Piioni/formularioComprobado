@@ -21,7 +21,7 @@
 .main_section {
     background-color: beige;
 }
-.main_wrapper {
+.main_wrapper, .main_wrapper_form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,7 +111,7 @@
 
 /* Footer */
 .footer{
-    background-color: #323232;
+    background-color: #232323;
 }
 .footer_wrapper {
     display: flex;
@@ -120,4 +120,15 @@
     width: 90%;
     margin: auto;
     padding: 20px;
+}
+
+/*Pagina de enviar formulario */
+.main_wrapper_form {
+    width: auto;
+    padding: 220px;
+}
+.texto_form{
+    font-size: 70px;
+    color: #232323 ;
+
 }
